@@ -1,7 +1,7 @@
 public class PalindromeChecker {
 
     public static boolean isPalindrome(String wordToBeChecked){
-        char[] word = wordToBeChecked.toCharArray();
+        char[] word = wordToBeChecked.toLowerCase().toCharArray();
         boolean result = false;
 
         if (compare(word, mirrorArray(word))){
